@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Practice(table_01)</title>
+        <style>
+            table {border: 2px solid black; border-collapse: collapse; text-align: center; font-size: 14px;}
+            thead tr th {background-color: gray; border: 2px solid black; padding: 10px;}
+            tbody tr th {background-color: gainsboro; border: 2px solid black; padding: 10px;}
+            tbody tr td {border: 1px solid black; padding: 5px;}
+        </style>
+    </head>
+    <body style="margin: 40px">
+        <table>
+            <caption style="font-size: 20px; padding: 10px;"><strong>아이템 정리</strong></caption>
+            <thead style="border: 2px solid black;">
+                <tr>
+                    <th>분류</th>
+                    <th>종류</th>
+                    <th>단가</th>
+                    <th>확정처리</th>
+                    <th>비고</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th rowspan="6">자격증</th>
+                    <td>행정사</td>
+                    <td rowspan="4">10,000</td>
+                    <td rowspan="6">5일</td>
+                    <td rowspan="6"></td>
+                </tr>
+                <tr>
+                    <td>공인중개사</td>
+                </tr>
+                <tr>
+                    <td>주택관리사</td>
+                </tr>
+                <tr>
+                    <td>사회복지사</td>
+                </tr>
+                <tr>
+                    <td>수산물품질관리사</td>
+                    <td>80,00</td>
+                </tr>
+                <tr style="border-bottom: 2px solid black;">
+                    <td>직업상담사</td>
+                    <td>6,000</td>
+                </tr>
+                <tr>
+                    <th rowspan="5">공무원</th>
+                    <td>9급공무원</td>
+                    <td rowspan="3">120,00</td>
+                    <td rowspan="5">5일</td>
+                    <td rowspan="5"></td>
+                </tr>
+                <tr>
+                    <td>소방공무원</td>
+                </tr>
+                <tr>
+                    <td>경찰공무원</td>
+                </tr>
+                <tr>
+                    <td>기능직공무원</td>
+                    <td>10,000</td>
+                </tr>
+                <tr style="border-bottom: 2px solid black;">
+                    <td>군무원</td>
+                    <td>11,000</td>
+                </tr>
+                <tr>
+                    <th rowspan="4">보험</th>
+                    <td>암보험</td>
+                    <td rowspan="2">40,000</td>
+                    <td rowspan="4">5일</td>
+                    <td rowspan="4"></td>
+                </tr>
+                <tr>
+                    <td>의료실비보험</td>
+                </tr>
+                <tr>
+                    <td>실버보험</td>
+                    <td>35,000</td>
+                </tr>
+                <tr style="border-bottom: 2px solid black;">
+                    <td>어린이보험</td>
+                    <td>40,000</td>
+                </tr>
+                <tr>
+                    <th rowspan="3">재무설계</th>
+                    <td>재무설계</td>
+                    <td>45,000</td>
+                    <td rowspan="3">5일</td>
+                    <td rowspan="3"></td>
+                </tr>
+                <tr>
+                    <td>변액연금</td>
+                    <td>42,000</td>
+                </tr>
+                <tr style="border-bottom: 2px solid black;">
+                    <td>펀드투자</td>
+                    <td>50,000</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
