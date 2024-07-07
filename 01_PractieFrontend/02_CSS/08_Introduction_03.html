@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자기 소개</title>
+    <style>
+        * {
+          box-sizing: border-box;
+          margin: auto;
+        }
+        
+        body {
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        /* Style the header */
+        header {
+          background-color: #666;
+          padding: 30px;
+          text-align: center;
+          font-size: 35px;
+          color: white;
+        }
+        
+        /* Create two columns/boxes that floats next to each other */
+        nav {
+          float: left;
+          width: 20%;
+          background: #ccc;
+          padding: 20px;
+          height: 1000px;
+        }
+        
+        /* Style the list inside the menu */
+        nav ul {
+          list-style-type: none;
+          padding: 0;
+        }
+        
+        article {
+          float: left;
+          padding: 20px;
+          width: 80%;
+          height: 1000px;
+          background-color: #f1f1f1;
+        }
+        
+        /* Clear floats after the columns */
+        section::after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+        
+        /* Style the footer */
+        footer {
+          background-color: #777;
+          padding: 10px;
+          text-align: center;
+          color: white;
+        }
+        
+        /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+        @media (max-width: 600px) {
+          nav, article {
+            width: 100%;
+            height: auto;
+          }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h2>자기 소개</h2>
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <li><a href="#">복싱 일지</a></li>
+                <li><a href="#">맛집 탐방</a></li>
+                <li><a href="#">여행 기록</a></li>
+            </ul>
+        </nav>
+  
+        <article>
+            <h1 style="border-left: 10px solid olivedrab; padding-left: 10px; font-size: 32px;">복싱 일지</h1><br><br>
+            <p>요즘들어 귀찮다는 핑계로 운동을 등한시 하고 있었습니다. 하지만, 점점 무거워 지는 몸과 바닥을 드러내고있는 체력을 보며 더이상은 이렇게 살면 안되겠다는 생각과 함께 복싱을 시작했습니다. 정확히 2년 전, 회사를 다니면서 복싱을 처음 배웠지만, 부서이동과 동시에 퇴근시간이 일정해지지 않아 그만둘 수 밖에 없었습니다. 당시에 복싱을 재밌게 배우고 있던터라 많이 아쉬운 마음이였습니다. 이번 기회에 다시 배우게 된것이 정말 행운이라고 생각합니다.</p><br>
+            <p>이번에 다니게 된 복싱장은 "매교 복싱"장 입니다. 복싱장 규모는 그렇게 크지 않지만, 사람이 많지 않았고 시설도 굉장히 깔끔한 편입니다. 옛날에 복싱을 배우면서 샀었던 장비들을 그대로 사용할 수 있어서 등록 비용도 어느정도 절감되었고, 건물 주차장을 무료로 사용할 수 있어서 너무나도 마음에 들었습니다. 관장님인지는 코치님인지는 잘 모르겠으나, 유쾌하신 분이 수업 커리큘럼에 대해서 자세히 소개시켜주셨습니다. 수업은 정해진 시간없이 자유로웠으며, 정해진 틀안에서 체계적으로 진행되었습니다.</p><br>
+            <p>수업시간은 대략 1시간 10분에서 20분 사이였고 준비운동, 줄넘기, 러닝으로 30분 정도 몸을 풀어주고, 20분에서 30분 정도 복싱수업을 하고 마무리로 체력단련과 스트레칭을 해주면 하루 수업이 끝입니다. 이번주 목요일부터 수업을 시작해 목금 이틀 수업을 참여했습니다. 아직 복싱을 하기위한 체력이 많이 부족한것이 절실히 체감되었고, 체력운동을 일순위로 해야할것 같다는 생각이 들었습니다.</p><br><br>
+            <p style="align-content: center;"><img src="../00_material/01_img/매교 복싱장_01.jpg" alt="" height="400px">&nbsp;&nbsp;&nbsp;<img src="../00_material/01_img/매교 복싱장_02.jpg" alt="" height="400px"></p>
+        </article>
+    </section>
+
+    <footer style="text-align: left; font-family: d2coding; font-size: 12px; padding-left: 20px;">
+        <p>Email: jojungon@naver.com</p>
+        <p>Tel: 010-6880-3477</p>
+        <p>이외에도 저에대해 궁금하신분들은 위의 연락처로 연락 주시면 언제든 답변 드리겠습니다.</p>
+    </footer>
+</body>
+</html>
