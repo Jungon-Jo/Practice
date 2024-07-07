@@ -16,7 +16,8 @@
         
         /* Style the header */
         header {
-          background-color: #666;
+          background-color: olive;
+          opacity: 0.8;
           padding: 30px;
           text-align: center;
           font-size: 35px;
@@ -27,7 +28,7 @@
         nav {
           float: left;
           width: 20%;
-          background: #ccc;
+          background: rgb(255, 255, 255);
           padding: 20px;
           height: 1000px;
         }
@@ -37,13 +38,23 @@
           list-style-type: none;
           padding: 0;
         }
+
+        table tr td {border-top: 2px solid olive; border-bottom: 2px solid olive; padding: 20px;} 
+
+        a:link {color: olive; text-decoration: none;}
         
+        a:visited {color: olive; text-decoration: none}
+
+        a:hover {color: olivedrab; text-decoration: none}
+
+        a:active {color: olivedrab; text-decoration: none}
+
         article {
           float: left;
           padding: 20px;
           width: 80%;
           height: 1000px;
-          background-color: #f1f1f1;
+          background-color: #ffffff;
         }
         
         /* Clear floats after the columns */
@@ -55,7 +66,8 @@
         
         /* Style the footer */
         footer {
-          background-color: #777;
+          background-color: olive;
+          opacity: 1.0;
           padding: 10px;
           text-align: center;
           color: white;
@@ -68,6 +80,18 @@
             height: auto;
           }
         }
+
+        .main_image {
+            position: relative;
+        }
+
+        .main_image_text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate( -50%, -50% );
+            color: white;
+        }
     </style>
 </head>
 <body>
@@ -78,13 +102,29 @@
 
     <section>
         <nav>
-            <ul>
-                <li><a href="#">복싱 일지</a></li>
-                <li><a href="#">맛집 탐방</a></li>
-                <li><a href="#">여행 기록</a></li>
-            </ul>
+            <table style="border-collapse: collapse; width: 100%; text-align: center;">
+                <tr>
+                    <td>
+                        <a href="http://127.0.0.1:5500/Practice/01_PractieFrontend/02_CSS/08_Introduction_00.html">자기 소개</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="http://127.0.0.1:5500/Practice/01_PractieFrontend/02_CSS/08_Introduction_01.html">복싱 일지</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="http://127.0.0.1:5500/Practice/01_PractieFrontend/02_CSS/08_Introduction_02.html">맛집 탐방</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="http://127.0.0.1:5500/Practice/01_PractieFrontend/02_CSS/08_Introduction_03.html">여행 기록</a>
+                    </td>
+                </tr>
+            </table>
         </nav>
-  
         <article>
             <h1 style="border-left: 10px solid olivedrab; padding-left: 10px; font-size: 32px;">복싱 일지</h1><br><br>
             <p>요즘들어 귀찮다는 핑계로 운동을 등한시 하고 있었습니다. 하지만, 점점 무거워 지는 몸과 바닥을 드러내고있는 체력을 보며 더이상은 이렇게 살면 안되겠다는 생각과 함께 복싱을 시작했습니다. 정확히 2년 전, 회사를 다니면서 복싱을 처음 배웠지만, 부서이동과 동시에 퇴근시간이 일정해지지 않아 그만둘 수 밖에 없었습니다. 당시에 복싱을 재밌게 배우고 있던터라 많이 아쉬운 마음이였습니다. 이번 기회에 다시 배우게 된것이 정말 행운이라고 생각합니다.</p><br>
