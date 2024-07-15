@@ -4,21 +4,56 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Test</title>
+  <style>
+    td {
+      width: 150px;
+    }
+  </style>
 </head>
 <body style="margin: 40px;">
   <div class="container">
-    <h2>Schedule</h2>
-      <form action="#" method="get">
-        <table style="width: 500px;">
-          <tr class="d-flex justify-content-between">
-            <td><label for="title">Title</label></td>
-            <td><input type="checkbox" value="Important" style="font-size: 12px;">Important</td>
-          </tr>
-          <tr>
-            <td colspan="2"><input type="text" name="title" id="title" placeholder="Title"></td>
-          </tr>
-        </table>
-      </form>
+    <form action="#" method="get">
+      <table style="margin: auto;">
+        <tr>
+          <td colspan="2"><h2>Schedule</h2></td>
+        </tr>
+        <tr class="d-flex justify-content-between">
+          <td><label for="title">Title</label></td>
+          <td style="text-align: right;"><input type="checkbox" value="Important" style="font-size: 12px;">&nbsp;Important</td>
+        </tr>
+        <tr>
+          <td colspan="2"><input type="text" name="title" id="title" style="width: 290px; margin-bottom: 10px;" placeholder="Title"></td>
+        </tr>
+        <tr>
+          <td><label for="place">Place</label></td>
+        </tr>
+        <tr>
+        <td colspan="2"><input type="text" name="place" id="title" style="width: 290px; margin-bottom: 10px;" placeholder="Place"></td>
+        </tr>
+        <tr>
+          <td><label for="start_date">Start Date</label></td>
+          <td><label for="end_date">End Date</label></td>
+        </tr>
+        <tr>
+          <td><input type="date" name="start_date" id="start_date" style="width: 140px; margin-bottom: 10px;"></td>
+          <td><input type="date" name="end_date" id="end_date" style="width: 140px; margin-bottom: 10px;"></td>
+        </tr> 
+        <tr>
+          <td><label for="start_time">Start Time</label></td>
+          <td><label for="end_time">End Time</label></td>
+        </tr>
+        <tr>
+          <td><input type="time" name="start_time" id="start_time" style="width: 140px; margin-bottom: 10px;"></td>
+          <td><input type="time" name="end_time" id="end_time" style="width: 140px; margin-bottom: 10px;"></td>
+        </tr>
+        <tr>
+          <td><label for="momo">Memo</label></td>
+        </tr>
+        <tr>
+          <td colspan="2"><textarea name="memo" id="memo" style="width: 290px; height: 200px;"></textarea></td>
+        </tr>
+      </table>
+    </form>
   </div>
 </body>
 </html>
